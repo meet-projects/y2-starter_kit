@@ -14,6 +14,10 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
+@app.route('/url_for/<string:func>')
+def show_url_for(func):
+    print(func)
+    return render_template('urlfor.html', function=func)
 
 # Running the flask app
 if __name__ == "__main__":

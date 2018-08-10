@@ -5,8 +5,6 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-# Place your database schema code here
-
 # Example code:
 class Student(Base):
     __tablename__ = "student"
@@ -16,4 +14,4 @@ class Student(Base):
 
 
     def __repr__(self):
-        return ("Student name: {}\nStudent Year:{}".format(self.name, self.year))
+        return ("Student name: {}, Student Year:{}\n".format(self.name, self.year))
