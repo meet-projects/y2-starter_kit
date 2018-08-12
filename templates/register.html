@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+        <form action="/register" method="POST">
+            <input type="text" name="username" placeholder="Pick a username">
+            <input type="password" name="password" placeholder="Pick a password">
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
